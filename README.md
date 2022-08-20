@@ -24,15 +24,17 @@
 
 ## 必需依赖
 
-[] nodejs 
-[] c/c++编译器 去vs官网装
+nodejs
+
+c/c++编译器
 
 ## 可选依赖(语言服务)
 
-对应ts/tsx
-[] tsserver  用node安装至全局
-对应rust
-[] rust_analyzer github搜lsp
+tsserver  用node安装至全局
+`对应ts/tsx`
+
+rust_analyzer github搜lsp
+`对应rust`
 
 **在c/c++编译器环境下下载语言服务。然后就可以在各处享受到语言服务了。**
 
