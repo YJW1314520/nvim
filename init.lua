@@ -2,6 +2,7 @@
 require('plugins')
 -- ts/js语言服务初始化
 require'lspconfig'.tsserver.setup{}
+require'lspconfig'.eslint.setup{}
 -- 不需要调用rust语言服务的setup
 -- 由插件帮你完成
 local rt = require("rust-tools")
