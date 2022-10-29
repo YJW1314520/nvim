@@ -15,10 +15,10 @@ vim.keymap.set('i', 'jk', '<esc>')
 -- ctrl-s 保存 本质上是切换到普通模式然后保存,再切换回输入模式
 -- 再加一条格式化
 -- 这里使用eslint格式化js/ts文件
--- 如果是其他语言需要使用 :lua vim.lsp.buf.fomatting()
-vim.keymap.set('i', '<C-s>', '<esc>:EslintFixAll<CR>:w<CR>a')
+-- 如果是其他语言需要使用 :lua vim.lsp.buf.formatting()
+vim.keymap.set('i', '<C-s>', '<esc>:lua vim.lsp.buf.formatting()<CR>:w<CR>a')
 -- 普通模式也能保存
-vim.keymap.set('', '<C-s>', ':EslintFixAll<CR>:w<CR>')
+vim.keymap.set('', '<C-s>', ':lua vim.lsp.buf.formattin()<CR>')
 -- 空格用于打开代码悬浮提示
 vim.keymap.set('', '<space>', ':lua vim.lsp.buf.hover()<CR>')
 -- gd go define 跳转至定义
